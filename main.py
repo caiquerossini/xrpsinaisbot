@@ -7,8 +7,8 @@ import requests
 PAR = 'XRP/USDT'
 EMA_PERIODO = 50
 INTERVALO = '1h'
-TELEGRAM_TOKEN = 'SEU_TOKEN_AQUI'
-TELEGRAM_CHAT_ID = 'SEU_CHAT_ID_AQUI'
+TELEGRAM_TOKEN = '7860630935:AAHthiRVPAZanAW_QlRBk9WmleVLyu-lScE'
+TELEGRAM_CHAT_ID = '397877740'
 INTERVALO_VERIFICACAO = 60 * 60  # 1 hora
 
 exchange = ccxt.bybit({
@@ -16,9 +16,9 @@ exchange = ccxt.bybit({
 })
 
 def enviar_telegram(mensagem):
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+    url = f"https://api.telegram.org/bot{7860630935:AAHthiRVPAZanAW_QlRBk9WmleVLyu-lScE}/sendMessage"
     payload = {
-        "chat_id": TELEGRAM_CHAT_ID,
+        "chat_id": 397877740,
         "text": mensagem
     }
     try:
